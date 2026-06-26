@@ -1,12 +1,6 @@
 import json
 from pathlib import Path
 
-BASE_DIR = Path(__file__).parent.parent
-REALM_DATA = BASE_DIR / "data" / "realmData.json"
-
-with open(REALM_DATA, "r") as file:
-    realms = json.load(file)
-
 class Player:
     def __init__(
         self, 
