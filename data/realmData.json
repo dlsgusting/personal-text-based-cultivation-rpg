@@ -12,7 +12,8 @@
       "base_attack": 10,
       "hp_increase": 50,
       "attack_increase": 5,
-      "breakthrough_qi_required": 100
+      "breakthrough_qi_required": 200,
+      "breakthrough_qi_increase": 100
     },
     {
       "name": "Foundation Establishment",
@@ -20,7 +21,8 @@
       "base_attack": 100,
       "hp_increase": 500,
       "attack_increase": 50,
-      "breakthrough_qi_required": 300
+      "breakthrough_qi_required": 2000,
+      "breakthrough_qi_increase": 1000
     }
   ]
 }
