@@ -1,6 +1,12 @@
 import json
 from pathlib import Path
 
+BASE_DIR = Path(__file__).parent.parent
+REALM_DATA = BASE_DIR / "data" / "realmData.json"
+
+with open(REALM_DATA, "r") as file:
+    realms = json.load(file)
+
 class Player:
     def __init__(
         self, 
@@ -47,11 +53,23 @@ class Player:
         )
 
     def view_status(self):
-        for attribute, value in self.__dict__.items():
-         print(f"{attribute}: {value}")
+        print("\n")
+        print(f"Name: {self.name}")
+        print(f"Realm: {self.realm} {self.minor_realm}")    
+        print(f"Qi: {self.qi}/{self.max_qi}")
+        print(f"Health: {self.health}")
+        print(f"Attack: {self.attack}")
+        print(f"Defense: {self.defense}")
+        # for attribute, value in self.__dict__.items():
+        #  print(f"{attribute}: {value}")
 
     def cultivate(self):
         self.qi += 1
+
+    def breakthrough(self):
+        if self.qi != self.max_qi :
+            print(f"Cannot breakthrough. Current qi: {self.qi}, required qi: {self.max_qi}")
+        
 
 
 
