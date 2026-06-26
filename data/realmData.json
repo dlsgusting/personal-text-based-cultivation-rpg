@@ -1,17 +1,12 @@
 {
   "realms": [
     {
-      "name": "mortal",
-      "base_hp": 100,
-      "base_attack": 10,
-      "breakthrough_qi_required": 100
-    },
-    {
       "name": "Qi Refining",
       "base_hp": 100,
       "base_attack": 10,
       "hp_increase": 50,
       "attack_increase": 5,
+      "defense_increase": 2,
       "breakthrough_qi_required": 200,
       "breakthrough_qi_increase": 100
     },
@@ -21,6 +16,7 @@
       "base_attack": 100,
       "hp_increase": 500,
       "attack_increase": 50,
+      "defense_increase": 20,
       "breakthrough_qi_required": 2000,
       "breakthrough_qi_increase": 1000
     }

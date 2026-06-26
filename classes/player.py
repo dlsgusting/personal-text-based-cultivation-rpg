@@ -64,11 +64,24 @@ class Player:
         #  print(f"{attribute}: {value}")
 
     def cultivate(self):
-        self.qi += 1
+        self.qi += 100
 
     def breakthrough(self):
-        if self.qi != self.max_qi :
+        if self.qi < self.max_qi :
             print(f"Cannot breakthrough. Current qi: {self.qi}, required qi: {self.max_qi}")
+            break
+        
+        if self.minor_realm != 9:
+            self.minor_realm += 1
+            self.qi = 0
+            self.max_qi = realms["realms"][0]["breakthrough_qi_required"]
+            self.health += realms["realms"][0]["hp_increase"]
+            self.attack += realms["realms"][0]["attack_increase"]
+            self.defense += realms["realms"][0]["defense_increase"]
+        else:
+            self.realm = realms
+            # seperate different realm stat increases with different functions, and then call the function based on the realm name.
+        
         
 
 
