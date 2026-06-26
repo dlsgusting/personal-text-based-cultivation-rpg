@@ -56,16 +56,6 @@ class Player:
             data["defense"]
         )
 
-    def minor_realm_inc(self):
-        current_realm = realms_dict[self.realm]
-        self.minor_realm += 1
-        self.qi = 0
-        self.max_qi += realms["realms"][current_realm]["breakthrough_qi_increase"]
-        self.health += realms["realms"][current_realm]["hp_increase"]
-        self.attack += realms["realms"][current_realm]["attack_increase"]
-        self.defense += realms["realms"][current_realm]["defense_increase"]
-
-
     def view_status(self):
         print("\n")
         print(f"Name: {self.name}")
@@ -76,17 +66,72 @@ class Player:
         print(f"Defense: {self.defense}")
 
     def cultivate(self):
-        self.qi += 100
+        if self.qi >= self.max_qi:
+            self.qi = self.max_qi
+            print("Already at max qi, can't go any higher.")
+        else:
+            self.qi += 100
+        self.view_status()
+
+    def get_realm_data(self):
+        current_realm_index = realms_dict[self.realm]
+        return realms["realms"][current_realm_index]
+
+
+    def update_stats(self):
+        realm_data = self.get_realm_data()
+        multiplier = realm_data["stage_multiplier"] ** (self.minor_realm - 1)
+
+        self.health = int(realm_data["base_hp"] * multiplier)
+        self.attack = int(realm_data["base_attack"] * multiplier)
+        self.defense = int(realm_data["base_defense"] * multiplier)
+
+
+    def update_max_qi(self):
+        realm_data = self.get_realm_data()
+
+        self.max_qi = (
+            realm_data["breakthrough_qi_required"] + realm_data["breakthrough_qi_increase"] * (self.minor_realm - 1)
+        )
+
+
+    def minor_realm_inc(self):
+        self.minor_realm += 1
+        self.qi = 0
+
+        self.update_stats()
+        self.update_max_qi()
+
+
+    def major_realm_increase(self):
+        current_realm_index = realms_dict[self.realm]
+        next_realm_index = current_realm_index + 1
+
+        if next_realm_index >= len(realms["realms"]):
+            print("You are already at the highest realm.")
+            return
+
+        self.realm = realms["realms"][next_realm_index]["name"]
+        self.minor_realm = 1
+        self.qi = 0
+
+        self.update_stats()
+        self.update_max_qi()
+        
 
     def breakthrough(self):
-        if self.qi < self.max_qi :
+        if self.qi < self.max_qi:
             print(f"Cannot breakthrough. Current qi: {self.qi}, required qi: {self.max_qi}")
             return
-        
-        if self.realm == "Qi Refining" and self.minor_realm < 9:
-            self.minor_realm_inc()
 
-        
+        if self.minor_realm < 10:
+            self.minor_realm_inc()
+            print(f"You broke through to {self.realm} {self.minor_realm}!")
+        else:
+            self.major_realm_increase()
+            print(f"You broke through to {self.realm} {self.minor_realm}!")
+
+        self.view_status()
         
 
 

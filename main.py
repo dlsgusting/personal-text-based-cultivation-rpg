@@ -7,14 +7,6 @@ PLAYER_DATA_FILE = BASE_DIR / "data" / "playerData.json"
 
 running = True
 
-actions = {
-    1: None,
-    2: None,
-    3: None,
-    4: None,
-    5: None
-}
-
 try:
     with open(PLAYER_DATA_FILE, "r") as file:
         player = Player.from_dict(json.load(file))
@@ -26,9 +18,48 @@ except (FileNotFoundError, json.JSONDecodeError):
     with open(PLAYER_DATA_FILE, "w") as file:
         json.dump(player.to_dict(), file, indent=4)
 
-player.view_status()
+def exit_menu():
+    global running
+    running = False
 
-with open(PLAYER_DATA_FILE, "w") as file:
-    json.dump(player.to_dict(), file, indent=4)
+actions = {
+    1: player.view_status,
+    2: player.cultivate,
+    3: player.breakthrough,
+    4: None,
+    5: exit_menu
+}
 
-# check if json is empty and user import, if not empty import thje file
+def choose_action():
+    print("\n")
+    print("1. View your stats")
+    print("2. Cultivate")
+    print("3. Realm breakthrough")
+    print("4. TBA")
+    print("5. Exit")
+
+    valid = [1,2,3,5]
+
+    while True:
+        try:
+            action = int(input())
+
+            if action in valid:
+                break
+            else:
+                print("Not a valid action, choose again")
+
+        except ValueError:
+            print("Please enter a valid action number.")
+
+    return action
+
+
+
+while running:
+    selected = choose_action()
+    actions[selected]()
+
+    with open(PLAYER_DATA_FILE, "w") as file:
+        json.dump(player.to_dict(), file, indent=4)
+
