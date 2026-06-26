@@ -7,6 +7,10 @@ REALM_DATA = BASE_DIR / "data" / "realmData.json"
 with open(REALM_DATA, "r") as file:
     realms = json.load(file)
 
+realms_dict = {
+    "Qi Refining" : 0,
+    "Foundation Establishment" : 1
+}
 class Player:
     def __init__(
         self, 
@@ -52,6 +56,16 @@ class Player:
             data["defense"]
         )
 
+    def minor_realm_inc(self):
+        current_realm = realms_dict[self.realm]
+        self.minor_realm += 1
+        self.qi = 0
+        self.max_qi += realms["realms"][current_realm]["breakthrough_qi_increase"]
+        self.health += realms["realms"][current_realm]["hp_increase"]
+        self.attack += realms["realms"][current_realm]["attack_increase"]
+        self.defense += realms["realms"][current_realm]["defense_increase"]
+
+
     def view_status(self):
         print("\n")
         print(f"Name: {self.name}")
@@ -60,8 +74,6 @@ class Player:
         print(f"Health: {self.health}")
         print(f"Attack: {self.attack}")
         print(f"Defense: {self.defense}")
-        # for attribute, value in self.__dict__.items():
-        #  print(f"{attribute}: {value}")
 
     def cultivate(self):
         self.qi += 100
@@ -69,18 +81,11 @@ class Player:
     def breakthrough(self):
         if self.qi < self.max_qi :
             print(f"Cannot breakthrough. Current qi: {self.qi}, required qi: {self.max_qi}")
-            break
+            return
         
-        if self.minor_realm != 9:
-            self.minor_realm += 1
-            self.qi = 0
-            self.max_qi = realms["realms"][0]["breakthrough_qi_required"]
-            self.health += realms["realms"][0]["hp_increase"]
-            self.attack += realms["realms"][0]["attack_increase"]
-            self.defense += realms["realms"][0]["defense_increase"]
-        else:
-            self.realm = realms
-            # seperate different realm stat increases with different functions, and then call the function based on the realm name.
+        if self.realm == "Qi Refining" and self.minor_realm < 9:
+            self.minor_realm_inc()
+
         
         
 

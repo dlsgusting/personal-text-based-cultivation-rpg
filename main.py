@@ -14,12 +14,21 @@ actions = {
     4: None,
     5: None
 }
-with open(PLAYER_DATA_FILE, "r") as file:
-    data = json.load(file)
 
-player = Player.from_dict(data)
+try:
+    with open(PLAYER_DATA_FILE, "r") as file:
+        player = Player.from_dict(json.load(file))
+
+except (FileNotFoundError, json.JSONDecodeError):
+    name = input("Enter your character's name: ")
+    player = Player(name, "Qi Refining", 1, 0, 100, 100, 10, 5)
+
+    with open(PLAYER_DATA_FILE, "w") as file:
+        json.dump(player.to_dict(), file, indent=4)
+
 player.view_status()
-player.cultivate()
 
 with open(PLAYER_DATA_FILE, "w") as file:
     json.dump(player.to_dict(), file, indent=4)
+
+# check if json is empty and user import, if not empty import thje file
