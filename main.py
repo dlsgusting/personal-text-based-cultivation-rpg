@@ -31,7 +31,7 @@ def choose_action():
     print("1. View your stats")
     print("2. Cultivate")
     print("3. Realm breakthrough")
-    print("4. Explore")
+    print("4. Events")
     print("5. Exit")
 
     valid = [1,2,3,4,5]
@@ -51,31 +51,39 @@ def choose_action():
     return action
 
 
-def explore():
+def event():
     with open(EVENTS_FILE, "r") as file:
         events = json.load(file)
 
-    num = random.randint(1, 20) - 1
+    chosen_event = random.choice(events)
 
-    event_type = events[num]["type"]
-    print(events[num]["description"])
+    event_type = chosen_event["type"]
+    print(chosen_event["description"])
 
     if event_type == "cultivate":
-        player.qi += events[num]["reward"]["qi"]
-        print(f"You gained {events[num]["reward"]["qi"]} qi!")
+        qi_gain = chosen_event["reward"]["qi"]
+        player.qi += qi_gain
+        print(f"You gained {qi_gain} qi!")
+
     elif event_type == "loot":
-        pass
-    elif event_type == "combat":
-        pass
-    else:
-        print("You gained nothing.")
+        reward = chosen_event["reward"]
+
+        if "spirit_stone" in reward:
+            stones = reward["spirit_stone"]
+            player.spirit_stone += stones
+            print(f"You got {stones} spirit stones!")
+
+        else:
+            for key, value in reward.items():
+                print(f"You got: {value} ({key})")
+
 
 
 actions = {
     1: player.view_status,
     2: player.cultivate,
     3: player.breakthrough,
-    4: explore,
+    4: event,
     5: exit_menu
 }
 
