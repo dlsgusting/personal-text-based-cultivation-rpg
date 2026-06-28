@@ -1,134 +1,167 @@
 [
   {
     "type": "loot",
-    "description": "You find a small pouch hidden under a tree root.",
+    "description": "A narrow animal trail leads you to a cave sealed behind hanging roots and old talisman paper. Inside, a skeleton in a torn inner-sect robe sits facing the wall, its finger bones still pressed against a cracked stone tablet. The tablet records only the first half of a movement technique, but the surviving footwork is sharp enough to evade ordinary blades.",
     "reward": {
-      "spirit_stones": 15
-    }
-  },
-  {
-    "type": "cultivate",
-    "description": "You meditate beside a calm spirit pond and absorb the surrounding qi.",
-    "reward": {
-      "qi": 100
-    }
-  },
-  {
-    "type": "combat",
-    "description": "A weak spirit beast blocks your path.",
-    "reward": {
-      "spirit_stones": 30
-    }
-  },
-  {
-    "type": "empty",
-    "description": "You wander through a quiet forest but find nothing useful.",
-    "reward": {}
-  },
-  {
-    "type": "loot",
-    "description": "You discover an abandoned campsite with a few valuables left behind.",
-    "reward": {
-      "spirit_stones": 20
-    }
-  },
-  {
-    "type": "combat",
-    "description": "A group of mortal bandits tries to rob you.",
-    "reward": {
-      "spirit_stones": 25
-    }
-  },
-  {
-    "type": "cultivate",
-    "description": "You sit beneath an ancient pine tree and circulate your qi.",
-    "reward": {
-      "qi": 80
-    }
-  },
-  {
-    "type": "empty",
-    "description": "A thick mist surrounds you, forcing you to turn back.",
-    "reward": {}
-  },
-  {
-    "type": "loot",
-    "description": "You find a cracked jade box near some old ruins.",
-    "reward": {
-      "spirit_stones": 45
-    }
-  },
-  {
-    "type": "combat",
-    "description": "A venomous snake spirit beast lunges at you from the grass.",
-    "reward": {
-      "spirit_stones": 35
-    }
-  },
-  {
-    "type": "cultivate",
-    "description": "You discover a small cave filled with weak spiritual energy.",
-    "reward": {
-      "qi": 120
-    }
-  },
-  {
-    "type": "empty",
-    "description": "You follow a strange sound, but it fades before you find its source.",
-    "reward": {}
-  },
-  {
-    "type": "loot",
-    "description": "You help an injured outer sect disciple and receive a small reward.",
-    "reward": {
-      "spirit_stones": 30
-    }
-  },
-  {
-    "type": "combat",
-    "description": "A rogue cultivator challenges you for your supplies.",
-    "reward": {
-      "spirit_stones": 60
-    }
-  },
-  {
-    "type": "cultivate",
-    "description": "You rest near a waterfall and refine the qi in your body.",
-    "reward": {
-      "qi": 150
-    }
-  },
-  {
-    "type": "empty",
-    "description": "You search an old shrine, but everything valuable has already been taken.",
-    "reward": {}
-  },
-  {
-    "type": "loot",
-    "description": "You find a broken storage pouch half-buried in the dirt.",
-    "reward": {
-      "spirit_stones": 40
-    }
-  },
-  {
-    "type": "combat",
-    "description": "A starving wolf beast attacks you near a mountain path.",
-    "reward": {
-      "spirit_stones": 28
-    }
-  },
-  {
-    "type": "cultivate",
-    "description": "You sense a faint qi vein underground and cultivate nearby.",
-    "reward": {
-      "qi": 200
+    "manual": "Incomplete Cloud-Stepping Manual"
     }
   },
   {
     "type": "loot",
-    "description": "A wandering merchant thanks you for giving directions.",
+    "description": "You find the remains of a merchant convoy half-buried beneath windblown sand. Most of the carts have been stripped clean, but one locked coffer lies beneath a dead mule, protected by a faded anti-theft charm that has almost lost its power. After breaking the charm, you recover a small pouch of polished Spirit Stones.",
     "reward": {
-      "spirit_stones": 18
+    "spirit_stone": 32
     }
+  },
+  {
+    "type": "loot",
+    "description": "At the edge of a ruined herb garden, you notice a stone basin filled with rainwater that refuses to grow stagnant. Beneath the basin is a hidden compartment containing three sealed jade bottles, each marked with the stamp of a forgotten alchemy hall. Only one pill remains intact, but its medicinal scent is still strong.",
+    "reward": {
+    "pill": "Lesser Blood Replenishing Pill"
+    }
+  },
+  {
+    "type": "loot",
+    "description": "A collapsed watchtower stands alone on a mountain pass, its upper floors crushed by some ancient impact. While searching the rubble, you uncover a sword wrapped in oilcloth and hidden beneath a loose foundation stone. The blade is chipped near the tip, but faint lightning patterns still crawl along the metal when touched by qi.",
+    "reward": {
+    "weapon": "Chipped Thunder-Iron Sword"
+    }
+  },
+  {
+    "type": "loot",
+    "description": "In a marsh choked with pale reeds, you find the nest of a slain spirit crane. The beast is long gone, leaving only scattered feathers and cracked eggshells, but one smooth blue bead remains buried in the mud at the nest's center. It pulses faintly with water-attributed spiritual energy.",
+    "reward": {
+    "treasure": "Water Spirit Bead"
+    }
+  },
+  {
+    "type": "loot",
+    "description": "You discover an abandoned shrine built into the roots of an ancient banyan tree. The statue inside has no face, only a pair of carved hands holding a shallow bowl. When you clean away the dust, a hidden slot opens in the altar and reveals a brittle map drawn on beast hide.",
+    "reward": {
+    "secret": "Map Fragment to the Red Lotus Tomb"
+    }
+  },
+  {
+    "type": "loot",
+    "description": "An old battlefield stretches across the valley floor, its weapons rusted and its armor swallowed by weeds. Near the center, where the earth is still dark from ancient blood, you find a cracked storage ring on the finger of a fallen cultivator. The space inside has nearly collapsed, but a few Spirit Stones remain intact.",
+    "reward": {
+    "spirit_stone": 47
+    }
+  },
+  {
+    "type": "loot",
+    "description": "A waterfall hides a shallow grotto behind its white curtain. Inside, the walls are marked with sword scars left by someone who trained here for many years. At the deepest point of the grotto, you find a bamboo tube containing a simple but practical sword scripture focused on cutting through defensive qi.",
+    "reward": {
+    "manual": "Iron Rain Sword Scripture"
+    }
+  },
+  {
+    "type": "loot",
+    "description": "You follow the scent of medicinal smoke to a cave where an alchemist once attempted secluded refinement. The furnace has exploded, blackening the walls and turning most of the stored herbs to ash. In the cracked remains of the furnace, one imperfect golden pill survived the blast.",
+    "reward": {
+    "pill": "Flawed Golden Marrow Pill"
+    }
+  },
+  {
+    "type": "loot",
+    "description": "At the bottom of a dry well beside a deserted village, you find a small bronze box sealed with wax. The box contains a clan token, a torn letter, and a bundle of carefully wrapped Spirit Stones. Whoever hid it likely meant to return, but the village above has been empty for decades.",
+    "reward": {
+    "spirit_stone": 18
+    }
+  },
+  {
+    "type": "cultivate",
+    "description": "You come upon a quiet spring hidden between two mossy cliffs. The water is clear enough to reflect the stars even in daylight, and strands of spiritual mist drift from the surface like breath from a sleeping beast. Sitting beside it, you can feel your meridians loosen as the surrounding qi slowly gathers around you.",
+    "reward": {
+    "qi": 63
+    }
+  },
+  {
+    "type": "cultivate",
+    "description": "Deep within a bamboo forest, the wind bends every stalk in the same direction, forming a natural qi-gathering pattern. The place is not powerful, but it is stable and peaceful, free from the chaotic spiritual currents found in more dangerous regions. A short period of meditation here sharpens your breathing and steadies your foundation.",
+    "reward": {
+    "qi": 28
+    }
+  },
+  {
+    "type": "cultivate",
+    "description": "You climb a lonely peak where thunderclouds gather even under a clear sky. Charred stones surround an ancient platform, and every few breaths a thin strand of lightning qi sinks into the ground. Cultivating here is painful, but each cycle forces your spiritual energy to become denser and more responsive.",
+    "reward": {
+    "qi": 82
+    }
+  },
+  {
+    "type": "cultivate",
+    "description": "A shallow cave opens behind a curtain of vines, its interior lined with pale crystals that glow when touched by moonlight. The qi inside is gentle and cool, especially suited for calming unstable energy after battle. Though the effect is not dramatic, the cave allows you to refine your breathing without interruption.",
+    "reward": {
+    "qi": 41
+    }
+  },
+  {
+    "type": "cultivate",
+    "description": "You find a broken formation array carved into a circular stone courtyard. Most of its runes have failed, but the central diagram still draws spiritual energy from the earth veins below. For a brief time, the ruined array activates around you, flooding the courtyard with thick, ancient qi before fading back into silence.",
+    "reward": {
+    "qi": 96
+    }
+  },
+  {
+  "type": "none",
+  "description": "A group of mortal woodcutters kneel beside the road, burning incense before a weathered stone marker. They explain that a wandering cultivator once killed a river demon here and refused all payment, asking only that the villagers remember the names of those who died. The marker has no sect emblem, only dozens of mortal names carved in uneven lines."
+  },
+  {
+  "type": "none",
+  "description": "You pass a ruined gate half-swallowed by ivy, its plaque split so badly that only one character remains readable. Beyond it are empty courtyards, collapsed dormitories, and training posts worn smooth by generations of hands. No corpses remain, but the silence suggests the sect did not leave by choice."
+  },
+  {
+  "type": "none",
+  "description": "A wandering cultivator rests beneath a roadside pine, boiling tea in a dented iron pot. His robe is patched, his sword is ordinary, and his aura is carefully restrained. He offers no challenge and asks for nothing, but his eyes follow the clouds with the patience of someone who has survived more battles than he cares to remember."
+  },
+  {
+  "type": "none",
+  "description": "At dusk, a line of red lanterns appears along a riverbank where no village stands. The lanterns drift against the current, each one carrying a strip of paper covered in names and birth dates. By morning, the river is empty again, and the mud shows no footprints."
+  },
+  {
+  "type": "none",
+  "description": "You hear the distant cry of a massive beast from beyond the northern hills. Birds scatter from the forest canopy, and smaller spirit animals flee through the underbrush without looking back. Whatever made the sound does not approach, but the pressure it leaves in the air lingers for a long time."
+  },
+  {
+  "type": "none",
+  "description": "A small town at the foot of the mountain is holding a funeral for someone they call the Old Immortal. From the offerings, you realize the deceased was only a low-level rogue cultivator, but the villagers treat him as their protector because he once repaired their irrigation channels with earth techniques. Their grief is plain and without calculation."
+  },
+  {
+  "type": "none",
+  "description": "You discover a stone bridge crossing a ravine, though no road leads to either side. Every slab is engraved with the same warning: do not answer when your name is called. As you cross, the wind carries several voices from below, each sounding almost familiar."
+  },
+  {
+  "type": "none",
+  "description": "Two outer disciples from a nearby sect argue beside a broken cart, their robes dusty and their pride badly bruised. They were sent to collect tribute herbs from a village, but a pack of monkeys stole both the herbs and their travel papers. Neither asks for help, and both pretend not to notice when the monkeys laugh from the trees above."
+  },
+  {
+  "type": "none",
+  "description": "A field of white flowers grows in the shape of a perfect circle, untouched by insects or grazing animals. At the center stands a rusted spear with no visible owner, its shaft wrapped in faded funeral cloth. The flowers sway even when the air is still."
+  },
+  {
+  "type": "none",
+  "description": "You find a village shrine dedicated not to an immortal, but to a nameless fox. The villagers leave rice, fruit, and scraps of red cloth before a small clay statue with one broken ear. An elder quietly explains that every winter, tracks appear around the village walls after heavy snow, and no wolves enter until spring."
+  },
+  {
+  "type": "none",
+  "description": "A caravan of spirit beast traders passes along the southern road, their cages covered in thick black cloth. Something inside one cage scrapes slowly against the bars, and the handler beside it keeps one hand on a stack of suppression talismans. The caravan moves quickly, refusing to camp before nightfall."
+  },
+  {
+  "type": "none",
+  "description": "On a cliff overlooking the plains, you find hundreds of sword marks carved into the stone. Some are shallow and clumsy, while others cut so deep that rainwater pools inside them. The oldest marks have become part of the cliff face itself, as if generations of cultivators came here to test themselves against those who stood before them."
+  },
+  {
+  "type": "none",
+  "description": "A sudden mist covers the path, and for several breaths the world becomes strangely quiet. In the fog, you see the outline of an ancient city wall where only forest should exist. When the mist clears, the wall is gone, but the scent of incense and old smoke remains."
+  },
+  {
+  "type": "none",
+  "description": "You come across a broken stone lion lying beside a mountain road. Its body is cracked, but its eyes are still polished smooth, facing toward the ruins of a distant estate. Someone has recently placed fresh fruit before it, though there are no houses nearby."
+  },
+  {
+  "type": "none",
+  "description": "A young messenger in sect robes races past you on a sweating horse, clutching a sealed jade slip against his chest. Moments later, three sword lights streak across the sky in the same direction. None of them stop, but the road feels less peaceful after they vanish beyond the horizon."
   }
 ]
