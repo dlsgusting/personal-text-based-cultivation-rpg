@@ -134,6 +134,11 @@ class Player:
             print(f"You broke through to {self.realm} {self.minor_realm}!")
 
         self.view_status()
+
+    def take_damage(self, damage):
+        self.health -= damage
+        if self.health < 0:
+            self.health = 0
         
 
 
