@@ -32,7 +32,7 @@ class Player:
         self.qi = qi
         self.max_qi = max_qi
         self.health = health
-        self.max_health
+        self.max_health = max_health
         self.attack = attack
         self.defense = defense
 
@@ -90,7 +90,7 @@ class Player:
         multiplier = realm_data["stage_multiplier"] ** (self.minor_realm - 1)
 
         self.health = int(realm_data["base_hp"] * multiplier)
-        self.max_health = self.health
+        self.max_health = int(realm_data["base_hp"] * multiplier)
         self.attack = int(realm_data["base_attack"] * multiplier)
         self.defense = int(realm_data["base_defense"] * multiplier)
 

@@ -22,6 +22,14 @@ class Enemy:
         self.attack = 1
         self.defense = 1
 
+    def view_status(self):
+        print("\n")
+        print(f"Name: {self.name}")
+        print(f"Realm: {self.realm} {self.minor_realm}")    
+        print(f"Health: {self.health}/{self.max_health}")
+        print(f"Attack: {self.attack}")
+        print(f"Defense: {self.defense}")
+
     def get_realm_data(self):
         current_realm_index = realms_dict[self.realm]
         return realms["realms"][current_realm_index]
@@ -32,7 +40,7 @@ class Enemy:
         multiplier = realm_data["stage_multiplier"] ** (self.minor_realm - 1)
 
         self.health = int(realm_data["base_hp"] * multiplier)
-        self.max_health = self.health
+        self.max_health = int(realm_data["base_hp"] * multiplier)
         self.attack = int(realm_data["base_attack"] * multiplier)
         self.defense = int(realm_data["base_defense"] * multiplier)
 
