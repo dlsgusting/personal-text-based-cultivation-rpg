@@ -1,0 +1,10 @@
+{
+    "name": "Ye Chen",
+    "realm": "Foundation Establishment",
+    "minor_realm": 1,
+    "qi": 0,
+    "max_qi": 3000,
+    "health": 5000,
+    "attack": 1000,
+    "defense": 500
+}

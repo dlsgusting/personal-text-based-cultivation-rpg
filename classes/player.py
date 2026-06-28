@@ -9,7 +9,9 @@ with open(REALM_DATA, "r") as file:
 
 realms_dict = {
     "Qi Refining" : 0,
-    "Foundation Establishment" : 1
+    "Foundation Establishment" : 1,
+    "Golden Core" : 2,
+    "Nascent Soul" : 3
 }
 class Player:
     def __init__(

@@ -1,0 +1,134 @@
+[
+  {
+    "type": "loot",
+    "description": "You find a small pouch hidden under a tree root.",
+    "reward": {
+      "spirit_stones": 15
+    }
+  },
+  {
+    "type": "cultivate",
+    "description": "You meditate beside a calm spirit pond and absorb the surrounding qi.",
+    "reward": {
+      "qi": 100
+    }
+  },
+  {
+    "type": "combat",
+    "description": "A weak spirit beast blocks your path.",
+    "reward": {
+      "spirit_stones": 30
+    }
+  },
+  {
+    "type": "empty",
+    "description": "You wander through a quiet forest but find nothing useful.",
+    "reward": {}
+  },
+  {
+    "type": "loot",
+    "description": "You discover an abandoned campsite with a few valuables left behind.",
+    "reward": {
+      "spirit_stones": 20
+    }
+  },
+  {
+    "type": "combat",
+    "description": "A group of mortal bandits tries to rob you.",
+    "reward": {
+      "spirit_stones": 25
+    }
+  },
+  {
+    "type": "cultivate",
+    "description": "You sit beneath an ancient pine tree and circulate your qi.",
+    "reward": {
+      "qi": 80
+    }
+  },
+  {
+    "type": "empty",
+    "description": "A thick mist surrounds you, forcing you to turn back.",
+    "reward": {}
+  },
+  {
+    "type": "loot",
+    "description": "You find a cracked jade box near some old ruins.",
+    "reward": {
+      "spirit_stones": 45
+    }
+  },
+  {
+    "type": "combat",
+    "description": "A venomous snake spirit beast lunges at you from the grass.",
+    "reward": {
+      "spirit_stones": 35
+    }
+  },
+  {
+    "type": "cultivate",
+    "description": "You discover a small cave filled with weak spiritual energy.",
+    "reward": {
+      "qi": 120
+    }
+  },
+  {
+    "type": "empty",
+    "description": "You follow a strange sound, but it fades before you find its source.",
+    "reward": {}
+  },
+  {
+    "type": "loot",
+    "description": "You help an injured outer sect disciple and receive a small reward.",
+    "reward": {
+      "spirit_stones": 30
+    }
+  },
+  {
+    "type": "combat",
+    "description": "A rogue cultivator challenges you for your supplies.",
+    "reward": {
+      "spirit_stones": 60
+    }
+  },
+  {
+    "type": "cultivate",
+    "description": "You rest near a waterfall and refine the qi in your body.",
+    "reward": {
+      "qi": 150
+    }
+  },
+  {
+    "type": "empty",
+    "description": "You search an old shrine, but everything valuable has already been taken.",
+    "reward": {}
+  },
+  {
+    "type": "loot",
+    "description": "You find a broken storage pouch half-buried in the dirt.",
+    "reward": {
+      "spirit_stones": 40
+    }
+  },
+  {
+    "type": "combat",
+    "description": "A starving wolf beast attacks you near a mountain path.",
+    "reward": {
+      "spirit_stones": 28
+    }
+  },
+  {
+    "type": "cultivate",
+    "description": "You sense a faint qi vein underground and cultivate nearby.",
+    "reward": {
+      "qi": 200
+    }
+  },
+  {
+    "type": "loot",
+    "description": "A wandering merchant thanks you for giving directions.",
+    "reward": {
+      "spirit_stones": 18
+    }
+  }
+]
