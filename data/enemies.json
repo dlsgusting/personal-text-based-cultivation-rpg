@@ -1,0 +1,353 @@
+[
+  {
+    "name": "Mudbank Reed Wolf",
+    "type": "beast",
+    "realm": {
+      "major": "Qi Refining",
+      "minor": 1
+    },
+    "description": "A lean reed-colored wolf stalks the muddy riverbanks outside a fishing village, its fur matted with algae and river silt. It is not especially strong, but it has learned to wait near small boats and bite through rope moorings so travelers drift into the reeds. When it attacks, it uses the wet ground and fog to circle its prey instead of charging directly."
+  },
+  {
+    "name": "Copper Coin Pickpocket",
+    "type": "human",
+    "realm": {
+      "major": "Qi Refining",
+      "minor": 2
+    },
+    "description": "A nervous young thief slips through the crowded morning market of a border town, pretending to sell cheap talismans while cutting purses with a thin blade. His cultivation is shallow, but his footwork is quick from years of running across rooftops and grain stalls. If cornered, he mutters, \"Look, I only took from people who looked like they could afford it.\""
+  },
+  {
+    "name": "Ash Basket Village Bully",
+    "type": "human",
+    "realm": {
+      "major": "Qi Refining",
+      "minor": 3
+    },
+    "description": "This failed outer disciple returned to his mountain village after being dismissed from a minor sect and now uses his weak spiritual pressure to intimidate farmers. He carries an ash basket filled with broken training stones, claiming they are sect relics. His attacks are clumsy but forceful, and he becomes angrier whenever someone recognizes how little he truly learned."
+  },
+  {
+    "name": "White-Flecked Cave Lizard",
+    "type": "beast",
+    "realm": {
+      "major": "Qi Refining",
+      "minor": 4
+    },
+    "description": "A pale lizard the size of a hunting dog clings to the damp walls of an abandoned mine, its white-speckled scales blending into patches of salt crystal. It feeds on bats, insects, and careless miners who enter without a torch. Though low in realm, it can spit a sticky mineral sludge that stiffens around boots and wrists."
+  },
+  {
+    "name": "Raincoat Ferry Cultivator",
+    "type": "human",
+    "realm": {
+      "major": "Qi Refining",
+      "minor": 5
+    },
+    "description": "A thin cultivator in a patched raincoat waits on ferry boats that cross a wide misty lake, offering protection to passengers before secretly provoking river beasts. He fights with a short oar reinforced by qi, making his attacks look more like panicked rowing than proper martial technique. His usual excuse is, \"The lake has been strange lately. You should have paid extra.\""
+  },
+  {
+    "name": "Wilted Herb Garden Rat",
+    "type": "beast",
+    "realm": {
+      "major": "Qi Refining",
+      "minor": 6
+    },
+    "description": "This oversized gray rat nests beneath a neglected spirit herb garden behind a ruined estate. After gnawing on immature moonroot and bitter ginseng, it developed a faint poisonous qi that makes its bite burn and itch. It is cowardly alone, but when threatened it shrieks loudly enough to summon an entire swarm from the irrigation channels."
+  },
+  {
+    "name": "Tired Outer Sect Patrolman",
+    "type": "human",
+    "realm": {
+      "major": "Qi Refining",
+      "minor": 7
+    },
+    "description": "An outer sect patrolman blocks a narrow mountain road with a wooden spear and a face full of exhaustion. He has not slept properly in days due to tournament security duty, and he is more irritable than malicious. He may start a fight over a missing travel token, grumbling, \"I do not care who your cousin knows. Stand in the line like everyone else.\""
+  },
+  {
+    "name": "Broken-Talisman Gambler",
+    "type": "human",
+    "realm": {
+      "major": "Qi Refining",
+      "minor": 8
+    },
+    "description": "Once a promising talisman student, this cultivator lost his sect stipend gambling in a lantern-lit alley and now sells defective charms in a city night market. His qi channels are unstable from cheap pills, causing sparks to crawl over his fingers when he panics. He fights desperately, throwing half-finished talismans that may explode, fizzle, or simply burst into smoke."
+  },
+  {
+    "name": "Iron-Toothed Plain Jackal",
+    "type": "beast",
+    "realm": {
+      "major": "Qi Refining",
+      "minor": 9
+    },
+    "description": "A pack leader from the vast yellow plains, this jackal has iron-dark teeth from chewing ore-rich bones near an exposed spirit vein. It circles camps at sunset and waits for cultivators to separate from their groups. Its body is still mortal enough to bleed easily, but its jaws can tear through leather armor and low-grade defensive charms."
+  },
+  {
+    "name": "Low-Talent Qi Deviant",
+    "type": "human",
+    "realm": {
+      "major": "Foundation Establishment",
+      "minor": 1
+    },
+    "description": "This ruined cultivator hides in a collapsed gambling hall beneath a prosperous city, his body warped by qi deviation after swallowing too many breakthrough pills. His left arm has swollen into a knot of dark veins and uneven bone, dragging across the floor when he walks. Sometimes he begs for money in a clear voice, and sometimes the mutated qi inside him speaks first."
+  },
+  {
+    "name": "Saltwind Boat Enforcer",
+    "type": "human",
+    "realm": {
+      "major": "Foundation Establishment",
+      "minor": 2
+    },
+    "description": "A broad-shouldered enforcer works aboard a merchant junk that carries spirit salt between river cities. He pretends to be hired security, but he quietly throws passengers overboard if they discover the smuggling compartments below deck. His water-attribute qi lets him harden spray into cutting arcs, and he speaks with the bored practicality of someone doing unpleasant work for steady pay."
+  },
+  {
+    "name": "Ink-Robed Examination Saboteur",
+    "type": "human",
+    "realm": {
+      "major": "Foundation Establishment",
+      "minor": 3
+    },
+    "description": "During a sect entrance examination, this ink-robed cultivator tampers with formation flags to eliminate talented applicants before they can reach the final round. He is not flashy, preferring traps, false clues, and small bursts of binding qi. When exposed, he sighs and says, \"You think merit decides these things? That is almost impressive.\""
+  },
+  {
+    "name": "Stoneplate Plateau Vulture",
+    "type": "beast",
+    "realm": {
+      "major": "Foundation Establishment",
+      "minor": 4
+    },
+    "description": "A huge black vulture nests along the wind-cut cliffs of a red stone plateau, watching caravan roads with patient golden eyes. It has swallowed enough spirit bones to form a crude foundation, making its wings heavy with earth qi. When it dives, the air around it becomes dense and grinding, as if the sky itself is dropping a slab of stone."
+  },
+  {
+    "name": "Blue Apron Pill Peddler",
+    "type": "human",
+    "realm": {
+      "major": "Foundation Establishment",
+      "minor": 5
+    },
+    "description": "A wandering alchemist in a faded blue apron sells recovery pills outside secret realm entrances, carefully pricing them higher once wounded cultivators start returning. His pills work, but some are laced with slow-acting sleep powder so he can rob customers later. He fights with furnace ash, pill fire, and a surprisingly sturdy copper ladle."
+  },
+  {
+    "name": "Temple Rice Monk",
+    "type": "human",
+    "realm": {
+      "major": "Foundation Establishment",
+      "minor": 6
+    },
+    "description": "This monk serves rice porridge to pilgrims at a quiet Buddhist temple, smiling gently while hiding a devil cultivation scripture beneath the kitchen floorboards. His chanting can calm ordinary visitors, but cultivators may feel a cold hunger behind the sound. He does not threaten enemies loudly; he only asks whether they have eaten, then seals the exits with black prayer beads."
+  },
+  {
+    "name": "Rust-Masked Mine Foreman",
+    "type": "human",
+    "realm": {
+      "major": "Foundation Establishment",
+      "minor": 7
+    },
+    "description": "A corrupt foreman controls an abandoned spirit-iron mine where debtors and captured rogue cultivators are forced to dig. His rust-colored mask filters poisonous ore dust and hides the burn scars from a failed refining accident. He uses chains soaked in metal qi, and his voice echoes through the mine tunnels through hidden copper pipes."
+  },
+  {
+    "name": "Moonlit Shrine Mantis",
+    "type": "beast",
+    "realm": {
+      "major": "Foundation Establishment",
+      "minor": 8
+    },
+    "description": "This jade-green mantis lurks in the overgrown courtyard of a forgotten moon shrine, standing motionless among cracked statues until someone reaches the altar. Its forelimbs are thin as ritual blades and carry a faint lunar chill. It is intelligent enough to retreat into moonlight when injured, using shadows from broken pillars to hide its next strike."
+  },
+  {
+    "name": "Polite Border Gate Captain",
+    "type": "human",
+    "realm": {
+      "major": "Foundation Establishment",
+      "minor": 9
+    },
+    "description": "A neatly dressed captain guards the gate of a border town where three provinces meet, collecting illegal tolls with perfect manners. He keeps ledgers, receipts, and a small tea stove beside the checkpoint, making his corruption look almost official. If challenged, he bows slightly and says, \"I understand your complaint. Unfortunately, the fee has doubled while we spoke.\""
+  },
+  {
+    "name": "Tournament Spear Substitute",
+    "type": "human",
+    "realm": {
+      "major": "Foundation Establishment",
+      "minor": 10
+    },
+    "description": "A spear cultivator enters sect tournaments under false names, replacing injured contestants for wealthy clans that want guaranteed advancement. He is disciplined, quiet, and careful not to reveal his full skill too early. His spear style is built around clean disabling strikes, but when pressured, his foundation erupts with enough force to crack the arena tiles."
+  },
+  {
+    "name": "Red-Sleeved Challenge Seeker",
+    "type": "human",
+    "realm": {
+      "major": "Golden Core",
+      "minor": 1
+    },
+    "description": "A wandering sword cultivator in red sleeves travels between large cities looking for opponents who can sharpen his intent. He is not cruel, but he has injured dozens of people by treating every disagreement as a useful duel. In tea houses he speaks plainly, often asking, \"Are you free after lunch? I would like to test three sword moves.\""
+  },
+  {
+    "name": "Thousand-Step Road Bandit Chief",
+    "type": "human",
+    "realm": {
+      "major": "Golden Core",
+      "minor": 2
+    },
+    "description": "This bandit chief controls the famous Thousand-Step Mountain Road, where pilgrims climb toward an ancient incense temple. Unlike common robbers, he commands trained cultivators, scouts, and formation traps hidden among prayer flags. His Golden Core pressure rolls down the stairs like a landslide, and even his casual palm strikes carry the weight of falling stone."
+  },
+  {
+    "name": "Crimson Shell Marsh Tortoise",
+    "type": "beast",
+    "realm": {
+      "major": "Golden Core",
+      "minor": 3
+    },
+    "description": "An ancient tortoise with a crimson shell sleeps beneath a marsh full of ghost reeds and half-sunken prayer boats. Local villagers believe it is a guardian spirit, but it awakens violently when cultivators harvest too many blood lotuses. Its shell can withstand ordinary flying swords, and its breath spreads a red mist that slows both movement and spiritual circulation."
+  },
+  {
+    "name": "Golden Abacus Tax Envoy",
+    "type": "human",
+    "realm": {
+      "major": "Golden Core",
+      "minor": 4
+    },
+    "description": "A tax envoy from a powerful cultivation dynasty arrives in market towns with clerks, guards, and a golden abacus that clicks without being touched. He is outwardly lawful, but he invents debts to seize spirit farms and family heirlooms. His abacus beads become heavy golden projectiles in battle, each one marked with the name of someone he has ruined."
+  },
+  {
+    "name": "Hollow-Eyed Secret Realm Scout",
+    "type": "human",
+    "realm": {
+      "major": "Golden Core",
+      "minor": 5
+    },
+    "description": "This scout survived too long inside a collapsing secret realm and came back with hollow silver eyes that no longer blink. She maps unstable spaces, sells accurate routes, then ambushes clients near treasures she cannot claim alone. Her movement is strange, stepping through short folds in space as if she remembers paths that are not currently there."
+  },
+  {
+    "name": "Black Incense Devil Monk",
+    "type": "human",
+    "realm": {
+      "major": "Golden Core",
+      "minor": 6
+    },
+    "description": "Beneath a respected hill temple, this monk maintains a hidden chamber where black incense burns before a faceless idol. By day he copies sutras and guides villagers through funerals; by night he refines resentment from the dead into devil qi. His chants are soft and steady, but each syllable presses against the soul like a cold thumb."
+  },
+  {
+    "name": "Glass-Fin Lake Serpent",
+    "type": "beast",
+    "realm": {
+      "major": "Golden Core",
+      "minor": 7
+    },
+    "description": "A long serpent with transparent fins coils beneath a clear mountain lake, almost invisible except when sunlight catches the edges of its body. It guards a drowned ruin where old formation pillars still glow under the water. Its Golden Core allows it to compress lake water into glassy spears, and its hiss can ripple through the surface like breaking crystal."
+  },
+  {
+    "name": "Yellow Robe Clan Auditor",
+    "type": "human",
+    "realm": {
+      "major": "Golden Core",
+      "minor": 8
+    },
+    "description": "A severe clan auditor visits branch families to inspect accounts, bloodline records, and hidden cultivation resources. He looks more like a tired scholar than a fighter, but his brush can write binding characters in midair. He dislikes wasted time and may say, \"Resist if you must, but please do it before the afternoon meal.\""
+  },
+  {
+    "name": "Mirror-Faced Ruin Guardian",
+    "type": "human",
+    "realm": {
+      "major": "Golden Core",
+      "minor": 9
+    },
+    "description": "This cultivator stands inside a ruined palace whose walls are covered in cracked bronze mirrors, though no one knows whether he is alive, dead, or a remnant projection. His face reflects whoever looks at him, making challengers hesitate at the worst possible moment. He defends the inner vault with mirror clones and reflected techniques stolen from previous intruders."
+  },
+  {
+    "name": "Five-Poison Garden Matriarch",
+    "type": "human",
+    "realm": {
+      "major": "Golden Core",
+      "minor": 10
+    },
+    "description": "The matriarch of a hidden poison lineage tends a beautiful spirit herb garden behind a waterfall, where every flower, butterfly, and patch of moss has been cultivated to kill. She is gracious to visitors until they step off the stone path. Her Golden Core poison qi does not act quickly; it waits in the blood, blooming only when the victim tries to circulate spiritual energy."
+  },
+  {
+    "name": "Elder Under the Fish Market",
+    "type": "human",
+    "realm": {
+      "major": "Nascent Soul",
+      "minor": 1
+    },
+    "description": "An old man sells river fish from a wet stall in a noisy coastal city, arguing over copper coins with housewives while concealing Nascent Soul pressure deep within his dantian. He was once a sect elder who vanished after a failed succession struggle, and several assassins have disappeared beneath his stall. When forced to fight, the whole market smells of rain and old blood."
+  },
+  {
+    "name": "Cloudhorn Sky Elk",
+    "type": "beast",
+    "realm": {
+      "major": "Nascent Soul",
+      "minor": 2
+    },
+    "description": "This white elk walks across high mountain clouds as if they were packed snow, its antlers branching into misty silver horns. It rarely attacks mortals, but it destroys anyone who damages the cloud pine forests where it shelters newborn spirit beasts. Its presence turns the air thin and sacred, and each stamp of its hoof sends rings of pressure rolling across the peaks."
+  },
+  {
+    "name": "Silent Scripture Pavilion Elder",
+    "type": "human",
+    "realm": {
+      "major": "Nascent Soul",
+      "minor": 3
+    },
+    "description": "A silent elder guards the top floor of a great sect's scripture pavilion, where forbidden techniques are locked behind dustless jade shelves. He communicates by writing short notes with a dry brush, often more annoyed by noise than by theft. His Nascent Soul can manifest as pages of golden script that seal movement, suppress techniques, and erase hostile intent line by line."
+  },
+  {
+    "name": "Broken Crown Rebel Prince",
+    "type": "human",
+    "realm": {
+      "major": "Nascent Soul",
+      "minor": 4
+    },
+    "description": "A former prince with a broken jade crown leads rebels from a fortress carved into a black plateau. He claims to fight tyranny, but villages under his protection are drained of spirit stones, grain, and young cultivators. His imperial bloodline technique summons phantom banners and armored spirits, filling the battlefield with the pressure of a fallen dynasty."
+  },
+  {
+    "name": "Ancient Copperback Thunder Ape",
+    "type": "beast",
+    "realm": {
+      "major": "Nascent Soul",
+      "minor": 5
+    },
+    "description": "An enormous ape with a copper-colored spine lives among storm-split trees in a forbidden wilderness. It is old enough to remember when nearby sects were only wooden halls, and it hates the sound of mining picks near thunderstone veins. When enraged, it beats its chest like a war drum, calling down lightning that crawls across the ground instead of falling from the sky."
+  },
+  {
+    "name": "Wine-Drowsy Hidden Master",
+    "type": "human",
+    "realm": {
+      "major": "Nascent Soul",
+      "minor": 6
+    },
+    "description": "A lazy-looking drunk sleeps beside the wine jars of a small roadside inn, owing money to the owner and occasionally helping sweep the courtyard. In truth, he is a hidden master recovering from an old soul wound, and his casual sword flicks can divide clouds above the mountain road. He dislikes formal greetings and usually asks whether a fight can wait until after his hangover fades."
+  },
+  {
+    "name": "Void-Molt Cave Centipede",
+    "type": "beast",
+    "realm": {
+      "major": "Nascent Soul",
+      "minor": 7
+    },
+    "description": "Deep inside a cave system beneath ancient battlefield ruins, this black centipede sheds shells that vanish into empty space after a few breaths. Its body stretches longer than a city street, winding through tunnels too narrow for its size by folding through cracks in the void. Its venom corrodes protective qi, and its many legs tap against stone in patterns that disturb the soul."
+  },
+  {
+    "name": "North Gate Grand Marshal",
+    "type": "human",
+    "realm": {
+      "major": "Nascent Soul",
+      "minor": 8
+    },
+    "description": "The grand marshal of a northern fortress city commands armies of cultivator soldiers against raiders from the frozen plains. Publicly, he is a national hero; privately, he engineers border conflicts to justify higher taxes and military control. His spear intent carries the killing aura of thousands of battles, and even veteran Golden Core cultivators lower their eyes when he enters the war hall."
+  },
+  {
+    "name": "Lotus Coffin Soul Matron",
+    "type": "human",
+    "realm": {
+      "major": "Nascent Soul",
+      "minor": 9
+    },
+    "description": "This pale matron travels in a black carriage carrying a lotus-shaped coffin, appearing at funerals, plague villages, and battlefields before anyone invites her. She buys corpses politely, pays in clean spirit stones, and remembers every family name. Her Nascent Soul art manipulates mourning itself, turning grief into ghostly lotus petals that bind the living and strengthen the dead."
+  },
+  {
+    "name": "Star-Swallowing Ruins Dragon",
+    "type": "beast",
+    "realm": {
+      "major": "Nascent Soul",
+      "minor": 10
+    },
+    "description": "Coiled around the highest tower of a shattered ancient observatory, this dark-scaled dragon absorbs starlight through the cracks in its horns. It is not a true divine dragon, but it has survived countless expeditions and treats Nascent Soul cultivators as serious annoyances rather than equals. When it opens its eyes, the night sky above the ruins seems to bend downward, and its breath falls like a river of cold stars."
+  }
+]
