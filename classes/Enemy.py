@@ -7,6 +7,13 @@ REALM_DATA = BASE_DIR / "data" / "realmData.json"
 with open(REALM_DATA, "r") as file:
     realms = json.load(file)
 
+realms_dict = {
+    "Qi Refining" : 0,
+    "Foundation Establishment" : 1,
+    "Golden Core" : 2,
+    "Nascent Soul" : 3
+}
+
 class Enemy:
     def __init__(
         self, 
@@ -48,11 +55,11 @@ class Enemy:
         self.health -= damage
         if self.health < 0:
             self.health = 0
-
+        
     def defend(self):
-        self.defense += self.defense
+        self.defense = self.defense * 2
     def defend_off(self):
-        self.defense -= self.defense
+        self.defense = self.defense / 2
 
     def heal(self):
         self.health = self.health + (self.max_health * 0.15)

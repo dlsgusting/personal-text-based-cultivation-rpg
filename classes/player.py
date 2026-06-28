@@ -15,8 +15,8 @@ realms_dict = {
 }
 class Player:
     def __init__(
-        self, 
-        name, 
+        self,
+        name,
         realm,
         minor_realm,
         qi,
@@ -25,7 +25,7 @@ class Player:
         max_health,
         attack,
         defense
-        ):
+    ):
         self.name = name
         self.realm = realm
         self.minor_realm = minor_realm
@@ -35,6 +35,7 @@ class Player:
         self.max_health = max_health
         self.attack = attack
         self.defense = defense
+        self.is_defending = False
 
     def to_dict(self):
         return {
@@ -77,7 +78,8 @@ class Player:
             self.qi = self.max_qi
             print("Already at max qi, can't go any higher.")
         else:
-            self.qi += 100
+            self.qi = min(self.max_qi, self.qi + 10)
+
         self.view_status()
 
     def get_realm_data(self):
@@ -93,6 +95,7 @@ class Player:
         self.max_health = int(realm_data["base_hp"] * multiplier)
         self.attack = int(realm_data["base_attack"] * multiplier)
         self.defense = int(realm_data["base_defense"] * multiplier)
+        self.is_defending = False
 
 
     def update_max_qi(self):
@@ -117,7 +120,7 @@ class Player:
 
         if next_realm_index >= len(realms["realms"]):
             print("You are already at the highest realm.")
-            return
+            return False
 
         self.realm = realms["realms"][next_realm_index]["name"]
         self.minor_realm = 1
@@ -125,7 +128,10 @@ class Player:
 
         self.update_stats()
         self.update_max_qi()
+
+        return True
         
+
 
     def breakthrough(self):
         if self.qi < self.max_qi:
@@ -136,27 +142,39 @@ class Player:
             self.minor_realm_inc()
             print(f"You broke through to {self.realm} {self.minor_realm}!")
         else:
-            self.major_realm_increase()
-            print(f"You broke through to {self.realm} {self.minor_realm}!")
+            success = self.major_realm_increase()
+
+            if success:
+                print(f"You broke through to {self.realm} {self.minor_realm}!")
 
         self.view_status()
 
-    def take_damage(self, damage):
-        if self.defense >= damage:
-            print("Your defense is higher than enemy damage, attack nullified")
-        else:
-            self.health -= damage
-        if self.health < 0:
-            self.health = 0
-        
+def take_damage(self, damage):
+    damage = max(0, int(damage))
+    self.health -= damage
+
+    if self.health < 0:
+        self.health = 0
+
+
     def defend(self):
-        self.defense += self.defense
+        if not self.is_defending:
+            self.defense *= 2
+            self.is_defending = True
+
+
     def defend_off(self):
-        self.defense -= self.defense
+        if self.is_defending:
+            self.defense //= 2
+            self.is_defending = False
+
 
     def heal(self):
-        self.health = self.health + (self.max_health * 0.15)
-        if self.health > self.max_health:
-            self.health = self.max_health
+        old_health = self.health
+        heal_amount = int(self.max_health * 0.15)
+
+        self.health = min(self.max_health, self.health + heal_amount)
+
+        return self.health - old_health
 
 

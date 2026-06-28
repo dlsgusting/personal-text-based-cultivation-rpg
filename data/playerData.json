@@ -1,11 +1,11 @@
 {
     "name": "hello",
-    "realm": "Qi Refining",
-    "minor_realm": 3,
+    "realm": "Foundation Establishment",
+    "minor_realm": 1,
     "qi": 0,
-    "max_qi": 400,
-    "health": 195,
-    "max_health": 195,
-    "attack": 19,
-    "defense": 3
+    "max_qi": 3000,
+    "health": 5000,
+    "max_health": 5000,
+    "attack": 500,
+    "defense": 1.0
 }
