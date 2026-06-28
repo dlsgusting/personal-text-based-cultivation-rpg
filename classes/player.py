@@ -22,6 +22,7 @@ class Player:
         qi,
         max_qi,
         health,
+        max_health,
         attack,
         defense
         ):
@@ -31,6 +32,7 @@ class Player:
         self.qi = qi
         self.max_qi = max_qi
         self.health = health
+        self.max_health
         self.attack = attack
         self.defense = defense
 
@@ -42,6 +44,7 @@ class Player:
             "qi": self.qi,
             "max_qi": self.max_qi,
             "health": self.health,
+            "max_health": self.max_health,
             "attack": self.attack,
             "defense": self.defense
         }
@@ -54,16 +57,18 @@ class Player:
             data["qi"],
             data["max_qi"],
             data["health"],
+            data["max_health"],
             data["attack"],
             data["defense"]
         )
 
     def view_status(self):
+
         print("\n")
         print(f"Name: {self.name}")
         print(f"Realm: {self.realm} {self.minor_realm}")    
         print(f"Qi: {self.qi}/{self.max_qi}")
-        print(f"Health: {self.health}")
+        print(f"Health: {self.health}/{self.max_health}")
         print(f"Attack: {self.attack}")
         print(f"Defense: {self.defense}")
 
@@ -85,6 +90,7 @@ class Player:
         multiplier = realm_data["stage_multiplier"] ** (self.minor_realm - 1)
 
         self.health = int(realm_data["base_hp"] * multiplier)
+        self.max_health = self.health
         self.attack = int(realm_data["base_attack"] * multiplier)
         self.defense = int(realm_data["base_defense"] * multiplier)
 
@@ -136,10 +142,21 @@ class Player:
         self.view_status()
 
     def take_damage(self, damage):
-        self.health -= damage
+        if self.defense >= damage:
+            print("Your defense is higher than enemy damage, attack nullified")
+        else:
+            self.health -= damage
         if self.health < 0:
             self.health = 0
         
+    def defend(self):
+        self.defense += self.defense
+    def defend_off(self):
+        self.defense -= self.defense
 
+    def heal(self):
+        self.health = self.health + (self.max_health * 0.15)
+        if self.health > self.max_health:
+            self.health = self.max_health
 
 

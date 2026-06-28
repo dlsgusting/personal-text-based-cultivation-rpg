@@ -9,6 +9,9 @@ PLAYER_DATA_FILE = BASE_DIR / "data" / "playerData.json"
 BASE_DIR2 = Path(__file__).parent
 EVENTS_FILE = BASE_DIR2 / "data" / "events.json"
 
+BASE_DIR3 = Path(__file__).parent
+ENEMIES_FILE = BASE_DIR2 / "data" / "enemies.json"
+
 running = True
 
 try:
@@ -50,11 +53,30 @@ def choose_action():
 
     return action
 
+def combat():
+    realm_stages = {
+    "Qi Refining": [1, 2, 3, 4, 5, 6, 7, 8, 9],
+    "Foundation Establishment": [10, 11, 12, 13, 14, 15, 16, 17, 18, 19],
+    "Golden Core": [20, 21, 22, 23, 24, 25, 26, 27, 28, 29],
+    "Nascent Soul": [30, 31, 32, 33, 34, 35, 36, 37, 38, 39]   
+    }
+    with open(ENEMIES_FILE, "r") as file:
+        enemies = json.load(file)
+
+
+
+    chosen_enemy = random.choice(realm_stages[player.realm])
+    enemy1 = Enemy(chosen_enemy["name"], chosen_enemy["realm"], chosen_enemy["minor_realm"])
+
 
 def event():
     with open(EVENTS_FILE, "r") as file:
         events = json.load(file)
 
+    num = random.randint(1, 30)
+    if num <= 4:
+        combat()
+        return
     chosen_event = random.choice(events)
 
     event_type = chosen_event["type"]
