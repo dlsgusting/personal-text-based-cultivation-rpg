@@ -50,18 +50,32 @@ class Enemy:
         self.max_health = int(realm_data["base_hp"] * multiplier)
         self.attack = int(realm_data["base_attack"] * multiplier)
         self.defense = int(realm_data["base_defense"] * multiplier)
+        self.is_defending = False
 
     def take_damage(self, damage):
+        damage = max(0, int(damage))
         self.health -= damage
+
         if self.health < 0:
             self.health = 0
-        
+
+
     def defend(self):
-        self.defense = self.defense * 2
+        if not self.is_defending:
+            self.defense *= 2
+            self.is_defending = True
+
+
     def defend_off(self):
-        self.defense = self.defense / 2
+        if self.is_defending:
+            self.defense //= 2
+            self.is_defending = False
+
 
     def heal(self):
-        self.health = self.health + (self.max_health * 0.15)
-        if self.health > self.max_health:
-            self.health = self.max_health
+        old_health = self.health
+        heal_amount = int(self.max_health * 0.05)
+
+        self.health = min(self.max_health, self.health + heal_amount)
+
+        return self.health - old_health

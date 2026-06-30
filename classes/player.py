@@ -24,7 +24,8 @@ class Player:
         health,
         max_health,
         attack,
-        defense
+        defense,
+        spirit_stone=0
     ):
         self.name = name
         self.realm = realm
@@ -35,6 +36,7 @@ class Player:
         self.max_health = max_health
         self.attack = attack
         self.defense = defense
+        self.spirit_stone = spirit_stone
         self.is_defending = False
 
     def to_dict(self):
@@ -47,7 +49,8 @@ class Player:
             "health": self.health,
             "max_health": self.max_health,
             "attack": self.attack,
-            "defense": self.defense
+            "defense": self.defense,
+            "spirit_stone": self.spirit_stone
         }
     @classmethod
     def from_dict(cls, data):
@@ -60,7 +63,8 @@ class Player:
             data["health"],
             data["max_health"],
             data["attack"],
-            data["defense"]
+            data["defense"],
+            data["spirit_stone"]
         )
 
     def view_status(self):
@@ -72,13 +76,14 @@ class Player:
         print(f"Health: {self.health}/{self.max_health}")
         print(f"Attack: {self.attack}")
         print(f"Defense: {self.defense}")
+        print(f"Spirit Stones: {self.spirit_stone}")
 
     def cultivate(self):
         if self.qi >= self.max_qi:
             self.qi = self.max_qi
             print("Already at max qi, can't go any higher.")
         else:
-            self.qi = min(self.max_qi, self.qi + 10)
+            self.qi = min(self.max_qi, self.qi + 1000)
 
         self.view_status()
 
@@ -149,12 +154,12 @@ class Player:
 
         self.view_status()
 
-def take_damage(self, damage):
-    damage = max(0, int(damage))
-    self.health -= damage
+    def take_damage(self, damage):
+        damage = max(0, int(damage))
+        self.health -= damage
 
-    if self.health < 0:
-        self.health = 0
+        if self.health < 0:
+            self.health = 0
 
 
     def defend(self):
@@ -171,7 +176,7 @@ def take_damage(self, damage):
 
     def heal(self):
         old_health = self.health
-        heal_amount = int(self.max_health * 0.15)
+        heal_amount = int(self.max_health * 0.05)
 
         self.health = min(self.max_health, self.health + heal_amount)
 

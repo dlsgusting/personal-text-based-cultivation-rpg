@@ -18,7 +18,9 @@ try:
 
 except (FileNotFoundError, json.JSONDecodeError):
     name = input("Enter your character's name: ")
-    player1 = Player(name, "Qi Refining", 1, 0, 100, 100, 100, 10, 2)
+    player1 = Player(name, "Qi Refining", 1, 0, 0, 0, 0, 0, 0)
+    player1.update_stats()
+    player1.update_max_qi()
 
     with open(PLAYER_DATA_FILE, "w") as file:
         json.dump(player1.to_dict(), file, indent=4)
@@ -33,9 +35,10 @@ def choose_action():
     print("2. Cultivate")
     print("3. Realm breakthrough")
     print("4. Events")
-    print("5. Exit")
+    print("5. Combat")
+    print("6. Exit")
 
-    valid = [1,2,3,4,5]
+    valid = [1,2,3,4,5,6]
 
     while True:
         try:
@@ -50,6 +53,10 @@ def choose_action():
             print("Please enter a valid action number.")
 
     return action
+
+def finish_combat():
+    player1.defend_off()
+    player1.health = player1.max_health
 
 
 def combat():
@@ -87,7 +94,7 @@ def combat():
     while True:
         if player1.health <= 0:
             print("You have been defeated!")
-            player1.health = player1.max_health
+            finish_combat()
 
             qi_loss = int(player1.max_qi * 0.1)
             player1.qi = max(0, player1.qi - qi_loss)
@@ -95,7 +102,7 @@ def combat():
 
         if enemy1.health <= 0:
             print(f"You have defeated {enemy1.name}!")
-            player1.health = player1.max_health
+            finish_combat()
 
             qi_gain = int(player1.max_qi * 0.1)
             player1.qi = min(player1.max_qi, player1.qi + qi_gain)
@@ -177,12 +184,6 @@ def event():
     with open(EVENTS_FILE, "r") as file:
         events = json.load(file)
 
-    num = random.randint(1, 100)
-
-    if num <= 30:
-        combat()
-        return
-
     chosen_event = random.choice(events)
 
     event_type = chosen_event["type"]
@@ -198,7 +199,7 @@ def event():
 
         if "spirit_stone" in reward:
             stones = reward["spirit_stone"]
-            # player1.spirit_stone += stones
+            player1.spirit_stone += stones
             print(f"You got {stones} spirit stones!")
 
         else:
@@ -212,7 +213,8 @@ actions = {
     2: player1.cultivate,
     3: player1.breakthrough,
     4: event,
-    5: exit_menu
+    5: combat,
+    6: exit_menu
 }
 
 

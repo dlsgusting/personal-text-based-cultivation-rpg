@@ -1,11 +1,12 @@
 {
-    "name": "hello",
-    "realm": "Foundation Establishment",
+    "name": "sregf",
+    "realm": "Qi Refining",
     "minor_realm": 1,
     "qi": 0,
-    "max_qi": 3000,
-    "health": 5000,
-    "max_health": 5000,
-    "attack": 500,
-    "defense": 1.0
+    "max_qi": 200,
+    "health": 100,
+    "max_health": 100,
+    "attack": 10,
+    "defense": 2,
+    "spirit_stone": 0
 }
